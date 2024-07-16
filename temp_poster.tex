@@ -1,0 +1,340 @@
+% Unofficial University of Cambridge Poster Template
+% https://github.com/andiac/gemini-cam
+% a fork of https://github.com/anishathalye/gemini
+% also refer to https://github.com/k4rtik/uchicago-poster
+% poster to be presented in "Future Perspectives on QFT and Strings" in IISER Pune.
+\documentclass[final]{beamer}
+\title{All S Invariant Gluon OPEs on the Celestial Sphere}
+\author{Raju Mandal}
+\date{\today}
+\institute{NISER, Bhubaneswar}
+%================themes and packages========================
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[orientation=portrait,size=a0,scale=1.0]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{nott}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{anyfontsize}
+%=======added from talk slide==================================
+
+\usepackage{tensor}
+\usepackage{pifont}  %for more bullet shapes
+\usepackage{mathrsfs}
+\usepackage{dirtytalk}
+
+%====================================================================
+% ====================
+% Lengths
+% ====================
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.45\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+\newcommand{\chaptype}[1]{{#1}}
+%========================================================================
+% ====================
+% Title
+% ====================
+
+\title{An Infinite Family of S Invariant Theories on the Celestial Sphere}
+
+\author{Shamik Banerjee \inst{1,2} \and \textbf{Raju Mandal} \inst{1,2} \and Sagnik Misra \inst{1,2} \and Sudhakar Panda \inst{3} \and Partha Paul \inst{4}}
+
+\institute[shortinst]{\hspace{-20cm} 2024 \hspace{17cm} \inst{1} HBNI, Mumbai \samelineand \inst{2} \textbf{NISER, Bhubaneswar} \samelineand \inst{3} CCSP, Gurugram \samelineand \inst{4} IISC, Bangalore}
+
+% ====================
+% Footer (optional)
+% ====================
+
+%\footercontent{
+	%  \href{https://www.example.com}{https://www.example.com} \hfill
+	% ABC Conference 2025, New York --- XYZ-1234 \hfill
+	% \href{mailto:agajan.torayev@example.com}
+	%{agajan.torayev@example.com}}
+% (can be left out to remove footer)
+
+
+% ====================
+% Logo (optional)
+% ====================
+
+% use this to include logos on the left and/or right side of the header:
+\logoright{\includegraphics[height=7cm]{/home/jura/Dropbox/LATEX/iiserpune/niser2.png}}
+\logoleft{\includegraphics[height=6.5cm]{/home/jura/Dropbox/LATEX/iiserpune/iiserpunelogo.jpg}}
+%\logo{\includegraphics[height=10cm]{/home/jura/Dropbox/LATEX/iiserpune/iiserpunelogo.jpg}}
+% ====================
+% Body
+% ====================
+\newcommand{\Poincare}{Poincar\'e\xspace}
+
+\begin{document}
+
+\begin{frame}[t]
+	\begin{columns}[t]
+		\separatorcolumn
+		
+		\begin{column}{\colwidth}
+			
+	    %================================================================
+	    \begin{block}{Celestial Holography, a Putative Dual of QG in AFS}
+	    	Quantum theories of Gravity in (3+1)-D AFS  $\Longleftrightarrow$ 2D CCFTs on the Celestial sphere at null infinity.
+	    	\begin{figure}
+	    		\includegraphics[scale=.9]{celestial_img1.png}
+	    	\end{figure}
+	    	\hspace{26cm}\small{[Courtesy: Laura Donnay]}
+	    \end{block}
+	    %================================================================
+		\begin{block}{Asymptotic Symmetry Algebras for Gravity and Gauge Theories in AFS}
+			 \begin{itemize}
+			 	\item[\ding{71}] \boxed{\textbf{Conformally soft theorems}} $\longrightarrow$ Infinite dimensional non-trivial symmetries in Gauge theories and Gravity in 4D AFS.
+			 	\\
+			 	\vspace{4mm}
+			 	\item[\ding{71}]  \boxed{\textbf{Gravity}} $\longrightarrow$  \boxed{\textbf{wedge subalgebra of $w_{1+\infty}$ algebra}}.
+			 	\hspace{4cm} \textcolor{red}{\small(Guevara,Himwich,Pate and Strominger '21)} 
+			 	\vspace{4mm}
+			 	\item[\ding{71}] \boxed{\textbf{Gauge Theories}} $\longrightarrow$ \boxed{ \textbf{ $S$ algebra } } 
+			 \end{itemize}
+		\end{block}	
+	    
+	    %=============================================================
+	    \begin{block}{Motivation and the Goal}
+	    	\begin{itemize}
+	    		\item [\ding{71}] \boxed{\textbf{\textcolor{red}{Banerjee, Kulkarni and Paul '23}}}
+	    		$\Rightarrow$ computed $G^{+}G^{+}$ OPE and KZ-type null states of any $w_{1+\infty}$ invariant theories \hspace{16cm}\textcolor{blue}{2301.13225}; \textcolor{red}{2311.06485}
+	    		\vspace{2mm}\\
+	    		$\Rightarrow$ existence of a discrete infinite family of $w_{1+\infty}$ invariant theories on the celestial sphere.
+	    		\vspace{2mm}\\
+	    		\item[\ding{71}] \boxed{\textbf{\textcolor{red}{Goal}}}
+	    		$\Rightarrow$
+	    		Our goal is to classify the theories which are invariant under \textbf{S algebra} and also to find the \textbf{KZ}-type null states of these theories.  \hspace{5.6cm} \textcolor{blue}{2311.16796}
+	    		\\
+	    		\hspace{20cm} \textcolor{red}{\small{(Banerjee, RM, Misra, Panda and Paul '23)}}
+	    	\end{itemize}
+	    \end{block}
+		%=================================================================	
+		\begin{block}{Gluons and the S Algebra}
+				The \textcolor{red}{S algebra} is obtained from the \textcolor{red}{singular part of the OPE} i.e. 
+			\\
+			\hspace{21cm}\textcolor{red}{\small{Guevara, Himwich, Pate and Strominger '21 }}
+			\begin{equation}
+				\label{eq:soft4}
+				\begin{split}
+					&\mathcal{O}^{a,+}_{\Delta_{1}}(z_{1},\bar{z}_{1}) \mathcal{O}^{b,+}_{\Delta_{2}}(z_{2},\bar{z}_{2})
+					\sim -\frac{i\tensor{f}{^a^b_c}}{z_{12}}\sum_{n=0}^{\infty}B(\Delta_{1}+n-1,\Delta_{2}-1)\frac{\bar{z}^{n}_{12}}{n!}\bar\partial^{n}_{2}\mathcal{O}^{c,+}_{\Delta_{1}+\Delta_{2}-1}(z_{2},\bar{z}_{2}).
+				\end{split}
+			\end{equation}
+			\\
+			\textcolor{red}{Soft gluons :}
+			\begin{equation}
+				\label{eq:soft1}
+				R^{k,a}(z,\bar{z}) = \lim_{\Delta \to k}(\Delta-k)O^{a,+}_{\Delta}(z,\bar{z}) , \hspace{1cm} k=1,0,-1,...
+			\end{equation}
+			\textcolor{red}{Holomorphic soft gluon currents :}
+			\begin{equation}
+				\label{eq:soft2}
+				R^{k,a}(z,\bar{z}) =\sum_{n=\frac{k-1}{2}}^{\frac{1-k}{2}}\frac{R^{k,a}_{n}(z)}{\bar{z}^{n+\frac{k-1}{2}}}
+			\end{equation}
+			Modes of the Holomorphic currents :
+		\begin{equation}
+			\label{eq:soft3}
+			R^{k,a}_{n}(z)=\sum_{\alpha\in \mathbb{Z}-\frac{k+1}{2}} \frac{R^{k,a}_{\alpha,n}}{z^{\alpha+\frac{k+1}{2}}}
+		\end{equation}
+		Algebra :
+		\begin{equation}
+			\small
+			\label{eq:soft5}
+			[R^{k,a}_{\alpha,m},R^{l,b}_{\beta,n}]=-i\tensor{f}{^a^b_c}\frac{(\frac{1-k}{2}-m+\frac{1-l}{2}-n)!}{(\frac{1-k}{2}-m)!(\frac{1-l}{2}-n)!}	
+			\frac{(\frac{1-k}{2}+m+\frac{1-l}{2}+n)!}{(\frac{1-k}{2}+m)!(\frac{1-l}{2}+n)!}R^{k+l-1,c}_{\alpha+\beta,m+n}
+		\end{equation}
+		Redefinition :
+		\begin{equation}
+			\label{eq:soft6}
+			S^{q,a}_{\alpha,m}=(q-m-1)!(q+m-1)!R^{3-2q,a}_{\alpha,m}
+		\end{equation}
+		\textcolor{blue}{\textbf{S Algebra :}}
+		\begin{equation}
+			\label{eq:soft7}
+			[S^{p,a}_{\alpha,m},S^{q,b}_{\beta,n}]=-if^{abc}S^{p+q-1,c}_{\alpha+\beta,m+n}
+		\end{equation}
+		\end{block}
+		%==================================================================
+		\begin{block}{General Structure of Gluon-Gluon OPE}
+			\begin{equation}
+				\begin{split}
+					\label{eq:ope1}
+					&\mathcal{O}^{a,+}_{\Delta_{1}}(z_{1},\bar{z}_{1}) \mathcal{O}^{b,+}_{\Delta_{2}}(z_{2},\bar{z}_{2})\\
+					&\hspace{-2mm}
+					=-\frac{i\tensor{f}{^a^b_c}}{z_{12}}\sum_{n=0}^{\infty}B(\Delta_{1}+n-1,\Delta_{2}-1)\frac{\bar{z}^{n}_{12}}{n!}\bar\partial^{n}_{2}\mathcal{O}^{c,+}_{\Delta_{1}+\Delta_{2}-1}(z_{2},\bar{z}_{2})
+					+\sum_{p,q=0}^{\infty}\sum_{k=1}^{\tilde{n}_{p,q}}z^{p}_{12}\bar{z}^{q}_{12}\textcolor{red}{C^{k}_{p,q}}(\Delta_{1},\Delta_{2})\textcolor{red}{\tilde{\mathcal{O}}^{ab}_{k,p,q}}(z_{2},\bar{z}_{2}).
+				\end{split}
+			\end{equation}
+			\textcolor{blue}{Task is to determine}: 
+			\begin{itemize}
+				\item [\ding{45}] The OPE coefficients $C^{k}_{p,q}$ and
+				\vspace{2mm}
+				\item[\ding{45}] the S-algebra descendants $\tilde{\mathcal{O}}^{ab}_{k,p,q}$ of a positive helicity soft gluon.
+			\end{itemize}
+		\end{block}
+		%==================================================================
+		\begin{block}{Strategy}
+			\begin{itemize}
+				\item[\ding{45}] We consider S invariant theories for all of which S-algebra is universal $\Rightarrow$ Existence of a Master OPE .
+				\vspace{3mm}
+				\item[\ding{45}] We know that tree-level MHV sector of the pure YM theory is an example of such S invariant theories.
+				\vspace{3mm}
+				\item [\ding{45}] This Master OPE inserted in a MHV gluon scattering amplitude $\Rightarrow$ known MHV OPE.
+				\vspace{3mm}
+				\item [\ding{45}] \boxed{\textrm{\textbf{Master OPE = MHV-sector OPE + R}}}
+				\vspace{3mm}
+				\item [\ding{45}] $\textrm{R}$ should vanish inside MHV scattering amplitude $\Rightarrow$ $\textrm{R}$ is a lin. combination of MHV null states.
+				\vspace{3mm} 
+				\item [\ding{45}] $\textrm{R}$ consists only non-singular terms.
+			\end{itemize}
+		\end{block}
+		%==================================================================
+	\end{column}
+		\separatorcolumn
+		
+		\begin{column}{\colwidth}
+		%===================================================================
+		\begin{block}{OPEs in Terms of MHV Null States}
+				Using the above arguments we can rewrite $\eqref{eq:ope1}$ as,
+			\begin{equation}
+				\label{eq:ope2}
+				\hspace{-2mm}\boxed{
+					\begin{split}
+						&\mathcal{O}^{a,+}_{\Delta_{1}}(z_{1},\bar{z}_{1}) \mathcal{O}^{b,+}_{\Delta_{2}}(z_{2},\bar{z}_{2})|_{\textrm{Any Theory}}=\mathcal{O}^{a,+}_{\Delta_{1}}(z_{1},\bar{z}_{1}) \mathcal{O}^{b,+}_{\Delta_{2}}(z_{2},\bar{z}_{2})|_{\textrm{MHV}}\\
+						& \hspace{15cm} +\sum_{p,q=0}^{\infty}z^{p}_{12}\bar{z}^{q}_{12}\sum_{i=1}^{\tilde{n}_{p,q}}\tilde{C}^{k}_{p,q}(\Delta_{1},\Delta_{2})M^{a,b}_{k,p,q}(\Delta_1,\Delta_2,z_{2},\bar{z}_{2}).
+				\end{split}}
+			\end{equation}
+		\end{block}
+		%==================================================================
+		\begin{block}{MHV Null States at $\mathcal{O}(1)$}
+				The general null state at $\mathcal{O}(1)$ in the MHV-sector is given by
+			\begin{equation}
+				\label{eq:mhv1}
+				\begin{split}
+					&\Psi^{ab}_{j}(\Delta)=R^{-j,a}_{\frac{j-1}{2},\frac{j+1}{2}}\mathcal{O}^{b}_{\Delta+j,+}-\frac{(-1)^{j}j}{\Gamma(j+2)}\frac{\Gamma(\Delta+j-1)}{\Gamma(\Delta-2)}R^{1,a}_{-1,0}\mathcal{O}^{b}_{\Delta-1,+}
+					\\
+					&\hspace{5cm}
+					-\frac{(-1)^{j}}{\Gamma(j+1)}\frac{\Gamma(\Delta+j-1)}{\Gamma(\Delta-1)}R^{0,a}_{-1/2,1/2}\mathcal{O}^{b}_{\Delta,+}
+				\end{split}
+			\end{equation}
+			where $j=1,2,3,...$
+			\vspace{2mm}\\
+			\textcolor{red}{Let's consider the following basis :}
+			\begin{equation}
+				\label{eq:mhv2}
+				\begin{split}
+					M^{ab}_{k}(\Delta)= \sum_{i=1}^{k} \frac{1}{\Gamma(k-i+1)} \frac{\Gamma(\Delta+k-1)}{\Gamma(\Delta+i-1)}\Psi^{ab}_{i}(\Delta).
+				\end{split}
+			\end{equation}
+		
+		\end{block}
+		%==================================================================
+		
+		%==================================================================
+		\begin{block}{Action of the S algebra on the MHV Null States}
+			\textcolor{blue}{\textbf{Action of the Leading Soft Gluon modes:}}
+			\begin{equation}
+				\label{eq:act1}
+				R^{1,a}_{0,0}M^{bc}_{k}(\Delta)=-if^{abd}M^{dc}_{k}(\Delta)-if^{acd}M^{bd}_{k}
+			\end{equation}
+			\begin{equation}
+				\label{eq:act2}
+				R^{1,a}_{n,0}M^{bc}_{k}(\Delta)=0 , n>0
+			\end{equation}
+			\textcolor{blue}{\textbf{Action of the Subleading Soft Gluon mode :}}
+			\begin{equation}
+				\label{eq:new7}
+				\begin{split}
+					&[R^{0,a}_{1/2,1/2},M^{bc}_{k}(\Delta)]= -if^{abd}(k+2)M^{dc}_{k+1}(\Delta-1) +(\Delta+k-2) \Bigg\{if^{acd}M^{bd}_{k}(\Delta-1)+if^{abd}M^{dc}_{k}(\Delta-1)\Bigg\}
+				\end{split}.
+			\end{equation}
+		\end{block}
+	%===================================================================
+	\begin{block}{Higher Spin Currents in S Algebra}
+		\centering
+		\includegraphics[scale=1]{fig.pdf}
+	\end{block}
+	%======================================================================
+	\begin{block}{Building up S invariant OPEs}
+		\textcolor{blue}{\textbf{Observation :}}
+		\begin{itemize}
+			\item[\ding{224}]
+			Consider the following set of null states,
+			\begin{equation}
+				\label{eq:s1}
+				M^{bc}_{k}(\Delta) , k=1,2,3,...,n.
+			\end{equation}
+			\item[\ding{224}]
+			Action of $R^{0,a}_{1/2,1/2}$ on the null states is closed if we set
+			\begin{equation}
+				\label{eq:s2}
+				M^{ab}_{k+1}(\Delta)=0, k \ge n \ge 0.
+			\end{equation}
+		\end{itemize}
+		\textcolor{blue}{\textbf{Inference :}} 
+		\begin{itemize}
+			\item[\ding{224}]
+			We can get an S invariant OPE if we consider the finite set of null states $\eqref{eq:s1}$.
+		\end{itemize}
+	    \begin{equation}
+	    	\label{eq:s3}
+	    	\hspace{-4mm}\boxed{
+	    		\begin{split}
+	    			&\mathcal{O}^{a}_{\Delta_{1},+}(z,\bar{z})\mathcal{O}^{b}_{\Delta_{2},+}(0,0)|_{\mathcal{O}(1)}
+	    			=\mathcal{O}^{a}_{\Delta_{1},+}(z,\bar{z})\mathcal{O}^{b}_{\Delta_{2},+}(0,0)\Bigg|^{MHV}_{\mathcal{O}(1)}+\sum_{k=1}^{n}B(\Delta_{1}+k,\Delta_{2}-1)M^{ab}_{k}(\Delta_{1}+\Delta_{2})
+	    	\end{split}}
+	    \end{equation}
+    \begin{itemize}
+    	\item[\ding{224}] S invariance does not fix the value of integer n.
+    	\item [\ding{224}] Hence, different choices of the integer n give rise to a discrete infinite family of S-invariant OPEs. 
+    \end{itemize}
+	\end{block}
+%==========================================================================
+ \begin{block}{Knizhnik-Zamolodchikov Type Null States}
+\begin{equation}
+\label{eq:kz2}
+\boxed{
+K^{a}(\Delta)=\xi^{a}(\Delta)-i\sum_{k=1}^{n}M^{a}_{k}(\Delta+1)},
+\end{equation}
+where
+\begin{equation}
+\label{eq:kz3}
+\xi^{a}(\Delta)=C_{A}L_{-1}\mathcal{O}^{a,+}_{\Delta}-(\Delta+1)R^{1,b}_{-1,0}R^{1,b}_{0,0}\mathcal{O}^{a,+}_{\Delta}-R^{0,b}_{-\frac{1}{2},\frac{1}{2}}R^{1,b}_{0,0}\mathcal{O}^{a,+}_{\Delta+1}
+\end{equation}
+and
+\begin{equation}
+	M^{a}_{k}(\Delta)=f^{abc}M^{bc}_{k}.
+\end{equation}
+ \end{block}
+%=================================================================
+\begin{block}{References}
+	 S. Banerjee, R. Mandal, S. Misra, S. Panda and P. Paul, “All S invariant gluon OPEs on the
+	celestial sphere,” [arXiv:2311.16796 [hep-th]]
+	\footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+	\vspace{1mm}
+	\textcolor{red}{Email} : raju.mandal@niser.ac.in
+\end{block}
+%==================================================================
+		\end{column}
+	\separatorcolumn
+	
+\end{columns} 
+\end{frame}
+
+
+%=====================================================================
+
+	
+\end{document}
